@@ -1,0 +1,32 @@
+{
+  "name": "envoose",
+  "version": "0.0.1",
+  "description": "Simplistic env var parser inspired by mongoose schema",
+  "main": "index.js",
+  "scripts": {
+    "release": "release-it",
+    "lint": "standard -v"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ali-essam/envoose"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "Ali Essam <ali.essam.arafa@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "env",
+    "parser",
+    "schema",
+    "validaion"
+  ],
+  "devDependencies": {
+    "release-it": "^12.3.5"
+  }
+}
