@@ -1,5 +1,7 @@
 # Envoose
 [![npm version](https://badge.fury.io/js/envoose.svg)](https://www.npmjs.com/package/envoose)
+[![Build Status](https://travis-ci.org/ali-essam/envoose.svg?branch=master)](https://travis-ci.org/ali-essam/envoose)
+[![Coverage Status](https://coveralls.io/repos/github/ali-essam/envoose/badge.svg)](https://coveralls.io/github/ali-essam/envoose)
 [![Dependencies](https://david-dm.org/ali-essam/envoose/status.svg)](https://david-dm.org/ali-essam/envoose)
 [![Dev Dependencies](https://david-dm.org/ali-essam/envoose/dev-status.svg)](https://david-dm.org/ali-essam/envoose?type=dev)
 
