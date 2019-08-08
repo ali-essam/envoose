@@ -98,6 +98,8 @@ const _Boolean = (x) => {
   else throw new Error(`Invalid Boolean value '${x}'`)
 }
 
+const _Date = date => new Date(date)
+
 /**
  * Get configuration object from configSchema
  *
@@ -109,6 +111,7 @@ const getConfig = (configSchema) => {
   const config = {}
   for (const [varName, varSchema] of Object.entries(configSchema)) {
     if (varSchema.type === Boolean) varSchema.type = _Boolean
+    if (varSchema.type === Date) varSchema.type = _Date
     const env = varSchema.env || varName
     const rawVal = (_isNil(process.env[env]) && !varSchema.required) ? varSchema.default : process.env[env]
     try {
