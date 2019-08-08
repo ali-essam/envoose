@@ -1,6 +1,6 @@
 {
   "name": "envoose",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simplistic env var parser inspired by mongoose schema",
   "main": "index.js",
   "scripts": {
