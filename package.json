@@ -6,10 +6,12 @@
   "scripts": {
     "release": "release-it",
     "lint": "standard -v",
-    "test": "mocha"
+    "test": "nyc mocha",
+    "cover:report": "nyc report --reporter=html && open-cli ./coverage/index.html",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "engines": {
-    "node": ">=7.0.0"
+    "node": ">=8.0.0"
   },
   "repository": {
     "type": "git",
@@ -29,10 +31,15 @@
   ],
   "devDependencies": {
     "chai": "^4.2.0",
+    "chai-datetime": "^1.5.0",
+    "coveralls": "^3.0.6",
     "dirty-chai": "^2.0.1",
     "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "open-cli": "^5.0.0",
     "release-it": "^12.3.5",
-    "sinon": "^7.4.1"
+    "sinon": "^7.4.1",
+    "standard": "^13.1.0"
   },
   "standard": {
     "env": {
